@@ -1,0 +1,33 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.view-in-enter-active,
+.view-out-leave-active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: px2rem($titbarHeight);
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.view-in-enter-active {
+  -webkit-animation-name: inRight;
+  animation-name: inRight;
+}
+
+.view-out-leave-active {
+  -webkit-animation-name: outLeft;
+  animation-name: outLeft;
+}
