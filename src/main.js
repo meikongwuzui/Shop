@@ -61,31 +61,19 @@ Vue.use(DatetimePlugin)
 const routes = [
   {
     path: '/',
-    component: () => import('./components/Cus/Login')
+    component: () => import('./components/Mall/Index')
   },
   {
     path: '/Login',
     component: () => import('./components/Cus/Login')
   },
   {
-    path: '/Index',
-    component: () => import('./components/Cus/Index')
+    path: '/ProdList',
+    component: () => import('./components/Mall/ProdList')
   },
   {
-    path: '/MyRechargeRecord',
-    component: () => import('./components/Recharge/MyRechargeRecord')
-  },
-  {
-    path: '/LowerRecharge',
-    component: () => import('./components/Recharge/LowerRecharge')
-  },
-  {
-    path: '/AuthGenerate',
-    component: () => import('./components/Auth/Generate')
-  },
-  {
-    path: '/AuthExamine',
-    component: () => import('./components/Auth/Examine')
+    path: '/ProdDetail',
+    component: () => import('./components/Mall/Prod/ProdDetail')
   }
 ]
 
