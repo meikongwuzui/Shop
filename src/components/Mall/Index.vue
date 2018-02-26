@@ -18,14 +18,31 @@
         <load-more :show-loading="false" tip="再拉也没有了" background-color="#fff" color="#fff"></load-more>
     </div>
 
-    
+    <tabbar style="position: fixed">
+      <tabbar-item selected>
+        <img slot="icon" src="https://static.vux.li/demo/1.jpg">
+        <span slot="label">首页</span>
+      </tabbar-item>
+      <tabbar-item >
+        <img slot="icon" src="https://static.vux.li/demo/1.jpg">
+        <span slot="label">线下体验店</span>
+      </tabbar-item>
+      <tabbar-item link="Cart">
+        <img slot="icon" src="https://static.vux.li/demo/1.jpg">
+        <span slot="label">购物车</span>
+      </tabbar-item>
+      <tabbar-item link="Center">
+        <img slot="icon" src="https://static.vux.li/demo/1.jpg">
+        <span slot="label">个人中心</span>
+      </tabbar-item>
+    </tabbar>
 
   </div>
 </template>
 
 
 <script>
-import { Search, Swiper,Grid, GridItem ,LoadMore  } from "vux";
+import { Search, Swiper,Grid, GridItem ,LoadMore ,Tabbar, TabbarItem } from "vux";
 import prodItem from '../common/Prod/_prodItem'
 export default {
   components: {
@@ -34,7 +51,7 @@ export default {
     Grid,
     GridItem,
     prodItem,
-    LoadMore  
+    LoadMore  ,Tabbar, TabbarItem
   },
   data() {
     return {

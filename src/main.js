@@ -64,8 +64,16 @@ const routes = [
     component: () => import('./components/Mall/Index')
   },
   {
+    path: '/Index',
+    component: () => import('./components/Mall/Index')
+  },
+  {
     path: '/Login',
     component: () => import('./components/Cus/Login')
+  },
+  {
+    path: '/CusIndex',
+    component: () => import('./components/Cus/Index')
   },
   {
     path: '/ProdList',
@@ -74,6 +82,18 @@ const routes = [
   {
     path: '/ProdDetail',
     component: () => import('./components/Mall/Prod/ProdDetail')
+  },
+  {
+    path: '/Cart',
+    component: () => import('./components/Mall/Cart/Cart')
+  },
+  {
+    path: '/ConfirmOrder',
+    component: () => import('./components/Mall/Order/Confirm')
+  },
+  {
+    path: '/Center',
+    component: () => import('./components/Mall/User/Index')
   }
 ]
 

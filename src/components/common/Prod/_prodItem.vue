@@ -6,7 +6,7 @@
       <flexbox-item><span>￥139 分享200次</span></flexbox-item>
       <flexbox-item>
           <div class="btnRight">
-              <x-button type="warn" mini="true" link="ProdDetail">分享挣33</x-button>
+              <x-button type="warn" :mini="true" link="ProdDetail">分享挣33</x-button>
           </div>
       </flexbox-item>
     </flexbox>
